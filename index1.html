@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="card">
+        <div class="theme-toggle">
+            <label for="dark-mode">Dark Mode</label>
+            <input type="checkbox" id="dark-mode">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="City..." spellcheck="true">
+            <button><img src="icon/search.png" alt="search"></button>
+            <button id="location-btn"><i><img src="icon/map-pin.png" alt=""></i></button>
+        </div>
+        <div class="weather">
+            <p class="date-time">Loading...</p>
+            <img src="icon/sun.png" alt="" class="icon">
+            <h1 class="temp">29℃</h1>
+            <h2 class="city">Punjab</h2>
+            <p class="weather-description">Loading...</p>
+            <div class="detail">
+                <div class="col">
+                    <img src="icon/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="icon/wind.png" alt="">
+                    <div>
+                        <p class="Wind">10km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="icon/sunrise.png" alt="">
+                    <div>
+                        <p class="sunrise">--:-- AM</p>
+                        <p>Sunrise</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="icon/sunset.png" alt="">
+                    <div>
+                        <p class="sunset">--:-- PM</p>
+                        <p>Sunset</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-days">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
